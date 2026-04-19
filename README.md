@@ -1,0 +1,39 @@
+# Food Store — Proyecto Integrador Parcial 1
+
+Aplicación Fullstack (FastAPI + React) para gestión de productos, categorías e ingredientes de un negocio gastronómico.
+
+## Video de presentación
+[Link al video aquí]
+
+## Tecnologías
+- **Backend**: FastAPI, SQLModel, PostgreSQL, Pydantic v2
+- **Frontend**: React 18, TypeScript, Vite, Tailwind CSS 4, TanStack Query v5, React Router v6
+
+## Cómo correr el proyecto
+
+### Backend
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp env.example .env        # Configurar DATABASE_URL
+uvicorn app.main:app --reload
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Endpoints principales
+- `GET/POST /categorias`
+- `GET/PATCH/DELETE /categorias/{id}`
+- `GET/POST /ingredientes`
+- `GET/PATCH/DELETE /ingredientes/{id}`
+- `GET/POST /productos`
+- `GET/PATCH/DELETE /productos/{id}`
+
+Documentación interactiva: http://localhost:8000/docs
